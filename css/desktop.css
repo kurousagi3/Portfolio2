@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+html{
+	font-size: 100%;/*=16px*/
+}
+/*チェックボックスは非表示*/
+.nav-unshown {
+  display:none;
+}
+.slider{
+	height: 480px;
+    width: 80%;
+	position: relative;
+	overflow: hidden;
+	margin-left: 20%;
+	margin-top: -25px;
+}
+.slider img{
+	animation: 25s infinite;
+	width: 100%;
+	opacity: 0;
+	position: absolute;
+}
+@keyframes show {
+    0% {opacity:0}
+    3% {opacity:1}
+    15%{transform: translateY(-100px);}
+    18% {opacity:1}
+    20% {opacity:0}
+}
+.slider img:nth-of-type(1){
+	animation-name: show;
+
+}
+.slider img:nth-of-type(2){
+	animation-name: show;
+	animation-delay: 5s;
+}
+.slider img:nth-of-type(3){
+	animation-name: show;
+	animation-delay: 10s;
+}
+.slider img:nth-of-type(4){
+	animation-name: show;
+	animation-delay: 15s;
+}
+.slider img:nth-of-type(5){
+	animation-name: show;
+	animation-delay: 20s;
+}
+#menu{
+    position: relative;
+    z-index: 1;
+    background: url(../image/81820.jpg) left top no-repeat;
+    height: 480px;
+    position: fixed;
+    width: 20%;
+}
+#menu h1 {
+	font-size: 2.6em;
+	writing-mode: vertical-rl;
+    margin:auto;
+    position: relative;
+    top: 20px;
+}
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+nav{
+	writing-mode: vertical-rl;
+	margin: 25px auto;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+}
+nav ul li{
+	margin: 1em;
+}
+main {
+    margin-left: 20%;
+    background: url(../image/54109.jpg) ;
+    background-size: cover;
+    height: auto;
+}
+.wrapper{    /*TOP画像とかもろもろ*/
+	margin: 10px 10px;
+}
+h2{
+	text-align: center;
+	font-size: 1.4em;
+}
+.paragraph{
+	margin: 10px 0 30px;
+	height: 380px;
+}
+.menu{
+	display: flex;
+}
+.course2100{
+	background-color: #d669f573;
+	padding: 15px 30px;
+	writing-mode: vertical-rl;
+	width: 200px;
+}
+.course1600{
+	background-color: #ffc0c06e;
+	padding: 15px 30px;
+	writing-mode: vertical-rl;
+	width: 200px;
+}
+h3{
+	background-color: #ffda00b3;
+	font-size: 2em;
+}
+.contents{
+	font-size: 1em;
+}
+.photo{
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ol.photo img{
+	width: 100%;
+}
+.photo > *{
+ 	min-width: 30%;
+ 	flex-basis: 25%;
+}
+footer{
+	bottom: 0;
+	width: 100%;
+	background-color: #ec9413;
+	padding: 10px 0px;
+	display: flex;
+	font-size: 12px;
+}
+.logo {
+	width: 	20%;
+}
+.logo img{
+	width: 100%;
+}
+.shop{
+	margin: 0 2%;
+	width: 40%;
+	font-size: 1.4em;
+}
+.map{
+	width: 300px;
+	height: 100px;
+}
+iframe{
+	width: 100%;
+	height: 100%;
+	right: 0;
+}
