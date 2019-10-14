@@ -6,8 +6,8 @@ html{
 	font-size: 100%;/*=16px*/
 }
 .nav-drawer {
-  position: relative;
-  margin-left: 0;
+	margin-right: 0;
+	width: 12%; 
 }
 /*チェックボックスは非表示*/
 .nav-unshown {
@@ -16,18 +16,17 @@ html{
 /*アイコンのスペース*/
 #nav-open {
   display: inline-block;
-  height: 22px;
-  vertical-align: middle;
 }
 #nav-open span, #nav-open span:before, #nav-open span:after {
   position: absolute;
   height: 3px;/*線の太さ*/
   width: 30px;/*長さ*/
   border-radius: 3px;
-  background: black;
+  background:#f1a8f3;
   display: block;
   content: '';
   cursor: pointer;
+  z-index: 9999;
 }
 #nav-open span:before {
   bottom: -8px;
@@ -35,11 +34,25 @@ html{
 #nav-open span:after {
   bottom: -16px;
 }
+#nav-input:checked ~ #nav-open span{
+	background: transparent;
+}
+#nav-input:checked ~ #nav-open span:before{
+ 	-webkit-transform: rotate(-45deg);
+ 	transform: rotate(-45deg);
+ 	top: 10px;
+}
+#nav-input:checked ~ #nav-open span:after{
+ 	-webkit-transform: rotate(45deg);
+ 	transform: rotate(45deg);
+ 	top: 10px;
+ }
 /*中身*/
 .global-nav {
   position: fixed;
   top: 60px;
   height: 40px;
+  left: 0px;
   background:  #5c144ac4;
   transition: .3s ease-in-out;/*表示*/
   transform: translateY(-325%);/*上にかくしておく*/
@@ -66,15 +79,17 @@ html{
 #menu{
     z-index: 1;
     background: url(../image/81820.jpg) left top no-repeat;
-    height:70px;
+    height:60px;
     position: fixed;
     width: 100%;
+    display: flex;
 }
 #menu h1 {
-	font-size: 1em;
-    margin:auto;
+	font-size: 1.6em;
+    margin:auto 0;
     position: relative;
     text-align: center;
+    margin: auto;
 }
 a {
 	color: white;
@@ -95,7 +110,7 @@ nav li{
 }
 .slider{
 	height: 360px;
-    top: 70px;
+    top: 60px;
 	position: relative;
 	overflow: hidden;
 }
