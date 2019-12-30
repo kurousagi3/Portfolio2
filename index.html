@@ -1,101 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Portfoli</title>
-	<link rel="stylesheet" href="css/style.css" media="(max-width:400px)">
-	<link rel="stylesheet" href="css/desktop.css" media="(min-width:401px)">
+	<link rel="stylesheet" href="css/desktop.css" media="(min-width:751px)">
+	<link rel="stylesheet" href="css/mobile.css" media="(max-width:750px)">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-	<meta name="kyewords" content="ポートフォリオ,サイト作成,ＨＴＭＬ,ＣＳＳ">
-
+	<meta name="keywords" content="飲食店,和食,しゃぶしゃぶ,縦書き,ポートフォリオ">
+	<title>ポートフォリオ　和食屋しゃぶしゃぶ</title>
 </head>
-<body>
-	<header>
-		<h1>Portfoli Site</h1>
-		<div id="nav-drawer">
-			<input id="nav-input" type="checkbox" class="nav-unshown">
-			<label id="nav-open" for="nav-input"><span></span></label>
-			<label class="nav-unshown" id="nav-close" for="nav-input"></label>
-			<nav class="global-nav">
-				<table>
-					<tr>
-						<th><a href="#Portfoli">ポートフォリオ</a></th>
-						<th><a href="#blog">ブログ</a></th>
-						<th><a href="#profile">プロフィール</a></th>
-					</tr>
 
-				</table>	
-			</nav>
+<body>		
+	<header>
+		<div id="menu">
+			<h1><a href="index.html">しゃぶ亭●家</a></h1>
+			<div class="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+			    <label id="nav-open" for="nav-input">
+			     	<span></span>
+		    	</label>		     
+		   		<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<nav class="global-nav">
+					<label class="cancel" for="nav-input"></label>
+					<ul>
+						<li><a href="#" id="navi_course">お食事</a></li>
+						<li><a href="#" id="navi_outline">お飲み物</a></li>
+						<li><a href="#" id="navi_booking">店舗案内</a></li>
+						<li><a href="#" id="navi_greeting">アクセス</a></li>
+					</ul>
+				</nav>
+			</div><!---nav-drawer------>
 		</div>
-	</header><!-- /header -->
-		<main>
-			<div id="Portfoli">
-				<h2>ポートフォリオ集</h2>
-				<p>これまで作成したページの紹介です。各画像をクリックするとＧｉｔＨｕｂの公開ページが開きます。<br>
-					※スマホ用サイト作成（2019.10.14　作成時間：約６時間）<br>
-				 	※PC用対応（2019/11/13　作成時間約1時間半）</p>
-				<h3>①某イタリアン店アクセスページ</h3>
-				<div class="page1">
-					<a href="https://kurousagi3.github.io/Portfolio1/"><img src="image/Portfolio1.jpg" alt="イタリアン店アクセスページ"></a>
-					<p><a href="https://krousagi3.github.io/Portfolio1/">https://kurousagi3.github.io/Portfolio1/</a><br>
-						■挑戦したこと：Googleマップの埋め込み。読み込みが重くならないよう画像を減らす⇒背景のボーダーはCSS「repeating-linear-gradient」で作成	。<br>
-						■作業時間：コーディングのみ約4時間<br>
-						■その他：初めてのコーディングでタグを調べながらの作業で時間がかかったが、主に「display」や「position」について学ぶことができた。
-					</p>
+		<div class="slider">
+			<img src="image/counter.JPG" alt="カウンター画像">
+			<img src="image/gomadare.JPG" alt="ごまだれ画像">
+			<img src="image/set.JPG" alt="定食画像">
+			<img src="image/niku.JPG" alt="肉しゃぶ画像">
+			<img src="image/udon.JPG" alt="うどん画像">
+		</div>
+	</header>
+	<main>
+		<section class="wrapper">
+			<hr>
+			<h2>コース料理</h2>
+			<div class="paragraph">
+				<div class="menu">
+					<div class="course2100">
+						<h3>２１００円コース</h3>
+						<ul class="contents">
+							<li>お通し</li>
+							<li>名物こんにゃく刺身</li>
+							<li>しゃぶしゃぶ牛・豚・ラム・牛タン</li>
+							<li>しゃぶしゃぶ野菜大皿盛合せ</li>
+							<li>手打ちうどん（又はおじや）付</li>
+						</ul>
+					</div>
+					<div class="course1600">
+						<h3>１６００円コース</h3>
+						<ul class="contents">
+							<li>お通し</li>
+							<li>しゃぶしゃぶ牛・豚・ラム</li>
+							<li>しゃぶしゃぶ野菜大皿盛合せ</li>
+							<li>手打ちうどん（又はおじや）付</li>
+						</ul>
+					</div>
 				</div>
-				<h3 class="clear">②某しゃぶしゃぶ店トップページ</h3>
-				<div class="page2">
-					<a href="https://kurousagi3.github.io/Portfolio2/"><img src="image/Portfolio2.jpg" alt="和食店ページ"></a>	
-					<p><a href="https://kurousagi3.github.io/Portfolio2/">https://kurousagi3.github.io/Portfolio2/</a><br>
-						■挑戦したこと：ＣＳＳの「keyframes」でアニメーション。和食店らしく縦書きなどレイアウトを意識しました。<br>
-						■作業時間：デザイン＆コーディング：約10時間<br>
-						■その他：２回目のページ作成ではデザインから行いました。写真を多く載せたりTOP画像のアニメーションなど動きのあるページ作りがテーマ。また、JSやjavascriptに挑戦するにはまだHTMLやCSSの知識が浅いこともあり、今回はＣＳＳのみで挑戦しました。
-					</p>
-				</div>
-				<h3>③道の駅スタンプラリー（関東版）リンク集</h3>
-				<div class="page3">
-					<a href="https://kurousagi3.github.io/Blog/michi/michi_kantou.html"><img src="image/Portfolio3.jpg" alt="道の駅関東ページ"></a>
-					<p><a href="https://kurousagi3.github.io/Blog/michi/michi_kantou.html">https://kurousagi3.github.io/Blog/michi/michi_kantou.html</a><br>
-						■挑戦したこと：[table]タグやリンクのターゲット<br>
-						■作業時間：デザイン＆コーディング＆スタンプ画像編集（165個）：約15時間<br>
-						■その他：	情報量が多いため、スマホ版では「display: none」で表示する量の調整をしました。また、ページが長いため、「ＴＯＰ」へ戻るボタンや必要なページへのリンク用にボタンタグを多めに使用した。
-					</p>					
-				</div>
-				<h3>個人ブログ</h3>
-				<div id="blog">
-					<a href="https://kurousagi3.github.io/Blog/#"><img src="image/blog2.jpg" alt="個人ブログ"></a>
-					<p><a href="https://kurousagi3.github.io/Blog/">https://kurousagi3.github.io/Blog/</a><br>
-						■挑戦したこと：ＪＳの日本地図(※Git hub以降後、現在はエラーで表示されません)<br>
-						■作業時間：デザイン＆コーディング※画像編集含む：約15時間<br>
-						■その他：「Taget」でページ中央にリンク集を表示。（※リンク先記事は現在サイト移行中のため表示されません）
-					</p>
-				</div>
+				<p>※この他にも梅（3000円）竹（4000円）松（5000円）のコースがございます。</p>
 			</div>
-			
-			<div id="profile">
-				<h2>プロフィール</h2>
-				<dl>
-					<dt class="cap">名前</dt>
-					<dd>megumi</dd>
-					<dt  class="cap">学習中</dt>
-					<dd>ＨＴＭＬ、ＣＳＳ、Ｅｘｃｅｌ関数、VBA(勉強中）</dd>
-					<dt class="cap">経験職</dt>
-					<dd>法律事務、広告営業（記事作成含む）、雑貨販売</dd>
-					<dt class="cap">今後やりたいこと</dt>
-					<dd>WEB作成やライティングなど創作に関わりたいです。</dd>
-					<dt class="cap">趣味</dt>
-					<dd>旅行（目標は道の駅スタンプラリーで日本全国制覇！）、食べ歩き、ライブ、ビーズアクセサリー作り</dd>
-					<dt class="cap">特技</dt>
-					<dd>人マネをして勝手に学ぶこと。仕事も遊びもアンテナを張っており失敗も成功も疑問もすべてネタと思い楽しめるところ。</dd>
-					<dt class="cap">ちょっと自慢できること</dt>
-					<dd>趣味の旅行ブログは某ブログランキング最高5位！また、Google検索「道の駅スタンプラリーブログ」でTOPに表示。（※現在サイト移行のため閉鎖中）</dd>
-				</dl>
-			</div>			
-		</main>
-		<footer>
-			<p>Portfoli</p>
-			<a href=""></a>
-		</footer>
+		</section>
+			<ol class="photo">
+				<li><img src="image/set.JPG" alt="定食セット"></li>
+				<li><img src="image/gyutan.JPG" alt="牛タン"></li>	
+				<li><img src="image/lamp.JPG" alt="ラム肉"></li>			
+				<li><img src="image/niku.JPG" alt="肉しゃぶ"></li>
+				<li><img src="image/yasai.JPG" alt="野菜しゃぶ"></li>
+				<li><img src="image/gomadare.JPG" alt="ゴマダレ"></li>		
+				<li><img src="image/gaikan.JPG" alt="外観"></li>		
+				<li><img src="image/counter.JPG" alt="カウンター"></li>		
+				<li><img src="image/udon.JPG" alt="うどん"></li>
+			</ol>　
+	</main>
+	
+	<footer>
+			<div class="logo">
+				<a href="index.html"><img src="image/logo.jpg" alt="ロゴ"></a>
+			</div>	
+			<div class="shop">
+				<p>
+				住所：〒173-0023 板橋区●●町●●-●<br>
+				電話：01-2345-6789<br>
+				定休日：火曜日<br>
+				営業時間：11：30～14：00、17：00～22：00
+				</p>
+			</div>				
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.0925231005626!2d139.70009731514045!3d35.748530580178596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601892b9ecd74167%3A0xc451c8ba77fc6c05!2z5aSn5bGx6aeF!5e0!3m2!1sja!2sjp!4v1561808248961!5m2!1sja!2sjp" allowfullscreen></iframe>
+			</div>	
+	</footer>
 </body>
 </html>
